@@ -76,7 +76,7 @@ function runzip()
     # Unzip into unzip directory
     #
 
-    if ! unzip -qq "${zip_file}" -d "${zip_dir}"
+    if ! unzip -qqo "${zip_file}" -d "${zip_dir}"
         then
             echo "$0 - Unzip error for file : ${zip_file}"  >&2
             return 1
